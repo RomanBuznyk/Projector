@@ -1,3 +1,4 @@
+'''
 #1. All letters must be written in lowercase.
 string_1 = "Animals  "
 print(string_1.lower())
@@ -15,11 +16,11 @@ print(string_2.upper())
 string_3 = "   HoneyPot   "
 
     #a) from the beginning of the line
-print(string_3[3:])
+print(string_3.lstrip())
     #b) from the end of the line
-print(string_3[:11])
+print(string_3.rstrip())
     #c) on both sides of the line
-print(string_3[3:11])
+print(string_3.strip())
 
 
 #4. Check the value of the startwith ('Be') function for each line.:
@@ -59,3 +60,41 @@ string = 'X!xeXnxiXlX XtxeXrxcXeXsX Xax XsX`XtXIX'
 string = string.replace("x", "")
 string = string[::-1].replace("X", "")
 print(string)
+'''
+
+
+'''
+## Practice chapter 2
+#1. Print the text in which there will be a quote with double quotes.
+print('"text"')
+#2. Print the text in which there will be an apostrophe.
+print("It's a text")
+print("It\'s a 'text'")
+#3. Print one line that will be displayed on several lines
+print("Text\non\nsome\nlines ")
+#4. Print text that doesn`t fit in one line but will be displayed in one line
+print('Print text that doesn`t fit in one line but will be displayed in one line Print text that doesn`t fit in one line but will be displayed in one linePrint text that doesn`t fit in one line but will be displayed in one linePrint text that doesn`t fit in one line but will be displayed in one line')
+'''
+
+'''
+## Practice chapter 4
+
+#1. The program receive user's name and age from input. Then you need to display the name and age in one line in several ways:
+name = input('Enter your hame:')
+age = input('Enter you age:')
+
+#    a) by listing all the parameters in the print function
+print("Your name is " + name + " and your " + age + " years old")
+
+#     b) by formatting a string using the format function
+string_b = "Your name is {name} and your {age} years old"
+print(string_b.format(name = name, age = age))
+
+#     c) by formatting a string with f-string
+name = input('Enter your hame:')
+age = input('Enter you age:')
+string_c = f'Your name is {name} and your age is {age} years old'
+print = (string_c)
+
+#     String should looks like this: `"Your name is {name} and your {age} years old"`
+'''
