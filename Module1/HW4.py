@@ -174,16 +174,13 @@ print()
 #16
 #32
 #64
-
-number_1 = (input('Enter number:'))
-iteration = int(input('Enter number if iterations:'))
-number_2 = number_1
-i = 0
-while i < iteration: 
-    solution = number_1 * 2
-    #number_2 = solution
-print(solution) 
-
+'''
+number_1 = int(input('Enter number:'))
+iteration = int(input('Enter number 0f iterations:'))
+for i in range(iteration):
+    number_1 *= 2
+    print(number_1)
+'''
 
 #4. Write a program that caluculate Fibonacci series. The Fibonacci series is a series of numbers in which each number is the sum 
 # of the two preceding numbers. The first two numbers are 1 and 1. The third number is 1 + 1 = 2, 
@@ -204,4 +201,44 @@ while all < iteration:
 
 #5. Write a program that takes a number as input and revert it using math operators.
 #  You might use result of the exercise from the first lesson. 
-# Here you should be able to do it not only for three-digit numbers, but for any numbers.3
+# Here you should be able to do it not only for three-digit numbers, but for any numbers.
+'''
+numbers = input('number:')
+print(numbers)
+print(numbers[::-1])
+'''
+
+#Practice section 4
+#1. Write a program that always asks user to input somethings. Quit only if user inputs 'q' or 'Q'.
+'''
+while True:
+    inp = input('Enter somthing:')
+    if inp != 'Q' or 'q':
+        continue   
+    elif inp == 'q' or inp == 'Q':
+        break
+    print('stop')
+''' 
+#2. Write a program that iterated from 0 to 100 and prints out the number if it is divisible by 3.
+'''
+for i in range(0, 100):
+    if i % 3 == 0:
+        print(i, end= ' ,')
+'''
+
+#3. Get a number from user input and iterate from 0 to that number.
+
+    #A. Print 'foo' if the number is divisible by 3.
+    #B. Print 'bar' if the number is divisible by 5.
+    #C. Print 'foobar' if the number is divisible by both 3 and 5.
+
+'''
+inp = int(input('Enter number:'))
+for i in range(0, inp):
+    if i % 3 == 0:
+        print('foo')
+    elif i % 5 == 0:
+        print('bar')
+    elif i % 3 and i % 5 == 0:
+        print('foobar')
+'''
