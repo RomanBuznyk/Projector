@@ -100,6 +100,7 @@ elif month == 12:
 else:
     day = 1
     print('The next date is:', year, '-', month, '-', day)
+
 '''
 
 
@@ -218,7 +219,14 @@ while True:
     elif inp == 'q' or inp == 'Q':
         break
     print('stop')
-''' 
+'''
+
+inp = input('Enter somthing:')
+while inp != 'Q' or inp != 'q':
+    inp = input('Enter somthing:')
+    if inp == 'q' or inp == 'Q':
+        break
+    
 #2. Write a program that iterated from 0 to 100 and prints out the number if it is divisible by 3.
 '''
 for i in range(0, 100):
@@ -235,10 +243,10 @@ for i in range(0, 100):
 '''
 inp = int(input('Enter number:'))
 for i in range(0, inp):
-    if i % 3 == 0:
-        print('foo')
+    if i % 3 and i % 5 == 0:
+        print('foobar')
     elif i % 5 == 0:
         print('bar')
-    elif i % 3 and i % 5 == 0:
-        print('foobar')
+    elif i % 3 == 0:
+        print('foo')
 '''
