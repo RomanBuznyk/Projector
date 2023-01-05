@@ -1,3 +1,3 @@
 def hello(name: str):
-    print('Hello', name)
+    return f'Hello {name}!'
 
