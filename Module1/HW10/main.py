@@ -1,3 +1,7 @@
-from hello import *
+from hello import hello
+from try_faker import create_user
 
-hello(' Roman')
+
+if __name__ == '__main__':
+    print(hello('Robot'))
+    print(create_user('', 'Robot2023'))
